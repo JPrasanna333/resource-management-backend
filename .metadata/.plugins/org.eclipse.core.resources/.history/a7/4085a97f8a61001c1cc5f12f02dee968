@@ -1,0 +1,5 @@
+package org.arm.resource.mngt.api;
+
+public class RoleController {
+
+}

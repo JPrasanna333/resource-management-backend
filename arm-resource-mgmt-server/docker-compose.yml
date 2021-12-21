@@ -1,0 +1,49 @@
+version: "3.3"
+
+networks:  
+  ms-network:   
+    driver: bridge
+
+services:
+  service-registry:
+    image: arm-discovery-service:0.0.1-SNAPSHOT
+    ports:
+      - 8761:8761
+    networks:
+      - ms-network
+      
+  config-service:
+    image: arm-config-service:0.0.1-SNAPSHOT
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://service-registry:8761/eureka/
+    depends_on:
+      - service-registry
+    ports:
+      - 7000:7000
+    networks:
+      - ms-network
+      
+  resource-mngt-service:
+    image: arm-resource-mngt-service:0.0.1-SNAPSHOT
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://service-registry:8761/eureka/
+    depends_on:
+      - service-registry
+      - config-service
+    ports:
+      - 8000:8000
+    networks:
+      - ms-network
+      
+  spring-gateway:
+    image: arm-spring-gateway:0.0.1-SNAPSHOT
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://service-registry:8761/eureka/
+    depends_on:
+      - service-registry
+      - resource-mngt-service
+      - config-service
+    ports:
+      - 8080:8080
+    networks:
+      - ms-network

@@ -1,0 +1,21 @@
+package org.arm.resource.mngt.service;
+
+import org.arm.resource.mngt.entity.User;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService implements IUserService {
+
+	@Override
+	public User registerNewUser(User user) {
+		return null;
+	}
+
+	@Override
+	public String getEncodedPassword(String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

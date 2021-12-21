@@ -1,0 +1,6 @@
+insert into role(role_name,role_description)
+values("Admin","This is for admin role");
+
+insert into role(role_name,role_description)
+values("User","This is the default role for new user");
+

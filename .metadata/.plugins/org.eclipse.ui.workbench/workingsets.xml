@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1639991342789_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1639991342810_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1639991363756_3" label="acheron-resource-management" name="acheron-resource-management">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/arm-resource-mgmt-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/arm-discovery-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/arm-config-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/arm-resource-mngt-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/arm-spring-gateway" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1639991347223_2" label="Window Working Set" name="Aggregate for window 1639991347222"/>
+</workingSetManager>

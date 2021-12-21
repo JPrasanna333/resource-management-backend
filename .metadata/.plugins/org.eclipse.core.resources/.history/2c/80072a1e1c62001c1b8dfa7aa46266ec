@@ -1,0 +1,17 @@
+CREATE TABLE users (
+ user_name VARCHAR(45) NOT NULL UNIQUE,
+ first_name VARCHAR(45),
+ last_name VARCHAR(45),
+ password VARCHAR(225),
+ PRIMARY KEY(user_name)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+--@Id
+--	private String userName;
+--	private String firstName;
+--	private String lastName;
+--	private String password;
+--	
+--	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+--	@JoinTable(joinColumns = { @JoinColumn(name = "userName") }, inverseJoinColumns = {
+--			@JoinColumn(name = "roleName") })
+--	private Set<Role> role;

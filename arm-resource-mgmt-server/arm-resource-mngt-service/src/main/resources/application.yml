@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: resource-mngt-service
+  config:
+    import: optional:configserver:http://localhost:7000/

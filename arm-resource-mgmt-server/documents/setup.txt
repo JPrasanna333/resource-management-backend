@@ -1,0 +1,24 @@
+
+## TODO ##
+database connectivity
+restClient setup
+logging
+exception handling
+unit testing
+integration testing
+code coverage
+static code analysis
+build
+jenkins pipeline setup
+ELK setup
+Distributed Tracing with Sleuth
+
+hystrix
+ribbon
+unit testing
+integration testing
+
+
+docker-compose up
+docker-compose up -d
+mvn package

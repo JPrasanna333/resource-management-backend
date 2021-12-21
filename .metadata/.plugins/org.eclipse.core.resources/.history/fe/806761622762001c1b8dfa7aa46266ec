@@ -1,0 +1,1 @@
+INSERT into role values("Admin","This is for admin role");

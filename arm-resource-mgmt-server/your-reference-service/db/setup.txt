@@ -1,0 +1,2 @@
+$docker pull mysql
+$docker run --name acheron-mysql -e MYSQL_ROOT_PASSWORD=MySQLPassword1! -d mysql:latest -p 3306:3306

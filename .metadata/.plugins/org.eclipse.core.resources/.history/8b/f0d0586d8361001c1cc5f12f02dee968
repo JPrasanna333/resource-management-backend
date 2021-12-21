@@ -1,0 +1,13 @@
+package org.arm.resource.mngt.service;
+
+import org.arm.resource.mngt.entity.Role;
+
+public class RoleService implements IRoleService {
+
+	@Override
+	public Role createNewRole(Role role) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

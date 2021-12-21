@@ -1,0 +1,2 @@
+INSERT into role (role_name,role_description)
+values("Admin","This is for admin role");

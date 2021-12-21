@@ -1,0 +1,30 @@
+https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion
+https://examples.javacodegeeks.com/jackson-bidirectional-relationships/
+https://dzone.com/articles/introduction-to-spring-data-jpa-part-6-bidirection
+
+
+
+do -> git remote -v [check the remote repository alias]
+
+origin	https://github.com/badalb/acheron-resource-management.git
+
+check the name for which git url has <badalb> like origin above so alias name is origin
+
+do -> git fetch --all
+
+do -> git checkout -b test <name of remote>/dev [ git checkout -b test for above example badalb/dev]
+
+do -> git commit 
+
+do -> git push [it can give you git push set origin type hint .. use that command]
+
+
+
+
+Resource View
+
+Get all resource [this will give you all resources and availability and leave]
+For all the resources get the tasks allocated to him/her by query
+associate above two results
+
+

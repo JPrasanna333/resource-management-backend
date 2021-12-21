@@ -1,0 +1,31 @@
+package org.arm.resource.mngt.service;
+
+import org.arm.resource.mngt.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService implements IUserService {
+	@Autowired
+	private 
+
+	@Override
+	public User registerNewUser(User user) {
+		Role role = roleDao.findById("User").get();
+
+		Set<Role> userRoles = new HashSet<>();
+		userRoles.add(role);
+		user.setRole(userRoles);
+		user.setUserPassword(getEncodedPassword(user.getUserPassword()));
+
+		return userDao.save(user);
+	}
+
+	@Override
+	public String getEncodedPassword(String password) {
+		return passwordEncoder.encode(password);
+	}
+	}
+	
+
+}
